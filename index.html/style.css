@@ -1,58 +1,66 @@
-/* General Body Styles */
+/* General Body Styles
+   Sets base font, removes default margin/padding, and applies background and text color */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-
-    
 }
 
+/* Container
+   Centers content and sets max width for layout */
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header and Navigation */
+/* Header and Navigation
+   Styles the header bar, fixes it to top, and sets background and text color */
 header {
     background-color: #333;
     color: #fff;
-    padding: 27px 0;
+    padding: 2px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-
-    
 }
 
+/* Navigation Bar
+   Arranges nav items horizontally and centers them vertically */
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo
+   Displays logo as a circle with background image and gradient overlay */
 header .logo {
     display: flex;
     align-items: center;
-    width: 60px; /* Set width */
-    height: 60px; /* Set height */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Assets/html-icon-isolated-white.jpg');
+    width: 60px; /* Logo width */
+    height: 60px; /* Logo height */
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('C:/Users/dell/Desktop/Projects/Web projects/Assets/html-icon-isolated-white.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes logo circular */
     overflow: hidden;
     color: #fff;
     text-decoration: none;
-    font-size: 0; /* Hide text if using only image */
+    font-size: 0; /* Hides text if only image is used */
 }
 
+/* Logo Text
+   Hides logo text if only image is needed */
 header .logo span {
-    display: none; /* Hide text if only image is needed */
+    display: none;
 }
 
+/* Navigation List
+   Removes default list styles and arranges items horizontally */
 header ul {
     list-style: none;
     margin: 0;
@@ -60,54 +68,65 @@ header ul {
     display: flex;
 }
 
+/* Navigation List Items
+   Adds spacing between nav links */
 header ul li {
     margin-left: 20px;
 }
 
+/* Navigation Links
+   Styles nav links with color, removes underline, and sets font size */
 header ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* Main Content Sections */
+/* Main Content Sections
+   Adds top padding to offset fixed header */
 main {
-    padding-top: 80px; /* To offset the fixed header */
+    padding-top: 80px;
 }
 
+/* Section Styles
+   Adds vertical padding and centers text in sections */
 section {
     padding: 4rem 0;
     text-align: center;
-
-    
 }
 
+/* Section Headings
+   Styles section headings with larger font and spacing */
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Hero Section */
+/* Hero Section
+   Styles hero area with background, color, and spacing */
 #hero {
     background-color: #666;
     color: #fff;
     width: 100%;
     padding: 80px 0;
-
-
-  
 }
 
+/* Hero Heading
+   Large heading for hero section */
 #hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
+/* Hero Paragraph
+   Subheading for hero section */
 #hero p {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
+/* Button Styles
+   Styles call-to-action buttons */
 .btn {
     display: inline-block;
     background-color: #fff;
@@ -118,14 +137,16 @@ section h2 {
     font-weight: bold;
 }
 
-/* Accessibility: Focus styles for links and buttons */
+/* Accessibility: Focus Styles
+   Adds visible outline for keyboard navigation */
 header ul li a:focus,
 .btn:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
 }
 
-/* Button Hover Effect */
+/* Button Hover Effect
+   Changes button color on hover/focus for interactivity */
 .btn:hover,
 .btn:focus {
     background-color: #333;
@@ -133,35 +154,66 @@ header ul li a:focus,
     transition: background 0.2s, color 0.2s;
 }
 
-/* Projects Section */
+/* Projects Section Grid
+   Arranges project cards in a responsive grid */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-
-    
 }
 
+/* Project Card
+   Styles individual project cards with background, padding, rounded corners, and shadow */
 .project-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+/* Projects Section
+   Styles the projects section with background and padding */
+#projects {
+    background-color: #666;
+    color: #fff;
+    width: 100%;
+    padding: 150px 0;
+}
+
+#Project-One{
+    background-image: url('C:/Users/dell/Desktop/Projects/Web projects/Assets/php-back-end-code.jpg');
+    padding: 150px;
+}
+
+#project-card p,h3{
+    font-size: 20px;
+    color: #333;
+
+}
+
+.project-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+/* About Section
+   Styles the about section with background and padding */
+#about {
+    background-color: #666;
+    color: #fff;
+    width: 100%;
+    padding: 150px 0;
+}
+
+p{
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     
 }
-
-#about{
-  background-color: #666;
-    color: #fff;
-    width: 100%;
-    padding: 150px 0;   
-    /* --- Add these properties --- */
-}
-
-#projec{
-  background-color: #666;
-    color: #fff;
-    width: 100%;
-    padding: 170px 0;   
+#logo-Ali{
+    color: cadetblue;
+    
+    font-size: 26px;
+    
 }
