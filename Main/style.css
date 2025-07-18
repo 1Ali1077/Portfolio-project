@@ -37,13 +37,13 @@ p {
 }
 
 .main-layout {
-    font-family:  Verdana, sans-serif;
+    font-family: Verdana, sans-serif;
     flex-direction: column;
     margin-left: 750px;
     padding-top: 70px;
 }
 
-.wall{
+.wall {
     width: 600px;
 }
 
@@ -63,14 +63,15 @@ p {
 
 .card-link {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     display: block;
 }
 
 
 .card:hover {
     background-color: #10316a2b;
-    transform: scale(1.03); /* Slightly enlarge */
+    transform: scale(1.03);
+    /* Slightly enlarge */
     /* No need to change padding or width */
 }
 
@@ -90,12 +91,12 @@ p {
     background-color: #5063867d;
 }
 
-.Projects-content{
-        flex: 1;
-        min-width: 0;
-        width: auto;
+.Projects-content {
+    flex: 1;
+    min-width: 0;
+    width: auto;
 
-    }
+}
 
 .Projects-content h3 {
     font-size: 18px;
@@ -106,7 +107,7 @@ p {
     letter-spacing: 1px;
     min-width: 190px;
     font-size: 13px;
-    
+
 }
 
 .content {
@@ -133,7 +134,7 @@ p {
     gap: 34px;
     flex: wrap;
     align-items: center;
-    
+
 }
 
 .tags span {
@@ -142,10 +143,10 @@ p {
     border-radius: 16px;
     padding: 10px;
     font-size: 12px;
-    
+
     margin-top: 8px;
     display: inline-block;
-    
+
 }
 
 .Main-link {
