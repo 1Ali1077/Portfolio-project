@@ -1,4 +1,232 @@
-<<<<<<< HEAD
-=======
+/* Sets base font, removes default margin/padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 23, 42);
+    color: #333;
+}
 
->>>>>>> 928b8fbb6d33fd185bcd02d57b9f9926052e8e52
+/* Centers content and sets max width*/
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Header and Navigation*/
+header {
+    background-color: rgb(15, 23, 42);
+    color: #fff;
+    padding: 2px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 77px;
+}
+
+/* Arranges nav items horizontally */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+.TopNav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.TopNav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+*/
+
+.topNav {
+    padding: 10px 20px;
+}
+
+.topNav a:hover {
+    background-color: #ddd;
+    color: black;
+    display: inline-flexbox;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.topNav .icon {
+    display: none;
+}
+
+/* Displays logo as a circle with background image*/
+header .logo {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    /* Logo width */
+    height: 70px;
+    /* Logo height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('C:/Users/dell/Desktop/Projects/Web projects/Assets/logo 1 big.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40%;
+    /* Makes logo circular */
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0;
+    /* Hides text if only image is used */
+}
+
+/* Removes default list styles and arranges items horizontally */
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Adds spacing between nav links */
+header ul li {
+    margin-left: 20px;
+}
+
+/* Navigation Links*/
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content*/
+main {
+    padding-top: 80px;
+}
+
+/* Adds vertical padding and centers text in sections */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Section Headings*/
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Hero Section*/
+#hero {
+    background-color: #666;
+    color: #fff;
+    width: 100%;
+    padding: 80px 0;
+}
+
+/* Hero Heading*/
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Hero Paragraph*/
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button Styles*/
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Adds visible outline for keyboard navigation */
+
+/* Button Hover Effect */
+.btn:hover,
+.btn:focus {
+    background-color: #333;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Arranges project cards in a responsive grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Styles individual project cards with background, padding, rounded corners, and shadow */
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles the projects section with background */
+#projects {
+    background-color: #666;
+    color: #fff;
+    width: 100%;
+    padding: 150px 0;
+}
+
+#Project-One {
+    background-image: url('C:/Users/dell/Desktop/Projects/Web projects/Assets/php-back-end-code.jpg');
+    padding: 150px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* project card text styling */
+#project-card p,
+h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+/* links to projects */
+.project-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+/* About Section */
+#about {
+    background-color: #666;
+    color: #fff;
+    width: 100%;
+    padding: 150px 0;
+}
+
+p {
+    font-size: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*logo styling*/
+#logo-Ali {
+    color: cadetblue;
+    font-size: 26px;
+}
